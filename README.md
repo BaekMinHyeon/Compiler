@@ -16,3 +16,12 @@ Hul_make_C : .hul을 .c로 바꾸어 파일에 출력
 - block 중첩 깊이는 10이하이다.
 
 Mini_Go : antlr를 이용하여 간단한 문법에 대해 아래와 같이 매치된 규칙번호와 구성하는 규칙번호가 학번과 함께 출력되도록 구문분석기를 구현
+
+1. 방법
+program : decl+ {System.out.println("202100000 Rule 0");};
+decl : var_decl {System.out.println("202100000 Rule 1-1");}
+| fun_decl {System.out.println("202100000 Rule 1-2");};
+var_decl : type_spec IDENT ';' {System.out.println("202100000 Rule 2-1");}
+| type_spec IDENT '[' ']' ';' {System.out.println("202100000 Rule 2-2");};
+...
+
