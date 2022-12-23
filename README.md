@@ -36,3 +36,7 @@ MiniGo_PrettyPrint : MiniGo를 이용하여 보기 좋게 출력시키기
 - 일반 괄호는 expression 에 붙여 적는다. 예) (x + y)
 
 HW4 : JVM의 코드를 Java코드로 변환
+
+HW5 : JVM 만들기
+1. 설명
+- 1부터 100까지 더하는 int sum(int n)을 JVM으로 만들기
