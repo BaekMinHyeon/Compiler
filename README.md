@@ -40,3 +40,21 @@ HW4 : JVM의 코드를 Java코드로 변환
 HW5 : JVM 만들기
 1. 설명
 - 1부터 100까지 더하는 int sum(int n)을 JVM으로 만들기
+
+[CP]HW06_201802101 : MiniGo Compiler 만들기
+1. 가정
+- 전체 .go 파일은 클래스 Test로 변환된다.
+- main 함수는 Java의 main 메소드로 변환된다.
+- 모든 함수는 public static 메소드로 변환된다.
+ex. int add(int x) { … } // in miniGo
+➔ public static int add(int x) { … } 에 해당하는 JVM 어셈블리어 코드
+- MiniGo에는 _print 라는 특수한 함수가 있어서 int타입의 값을 출력해준다고 가정한다.
+ex. _print(1); // in miniGo
+➔ System.out.println(1); 에 해당하는 JVM 어셈블리어 코드
+
+2. 없다고 생각할 것들
+- Global 변수는 없다고 생각한다.
+- 배열은 없다고 생각한다.
+- 예외발생, 처리도 없다고 가정한다.
+- 기타 Go 라이브러리, Java 라이브러리는 사용이 불가능하다고 가정한다.
+- 입력 MiniGo파일은 항상 오류가 없다고 가정한다
