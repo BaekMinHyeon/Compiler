@@ -25,3 +25,13 @@ Mini_Go : antlr를 이용하여 간단한 문법에 대해 아래와 같이 매�
 - | type_spec IDENT '[' ']' ';' {System.out.println("202100000 Rule 2-2");};
 - ...
 
+MiniGo_PrettyPrint : MiniGo를 이용하여 보기 좋게 출력시키기
+
+1. 방법
+“ANTLR”를 이용하여 주어진 문법에 대해 mini Go 파일을 pretty print 하는 프로그램을 작성하시오
+- 블록이나 nesting 되어 들어갈 때는 4 칸 들여쓰되 ‘.’을 찍음
+- If 등의 특수 절이나 함수 시작은 괄호를 함수 다음 줄에 표시한다.
+- 2 진 연산자와 피연산 사이에는 빈칸을 1 칸 둔다. 예) x+y ➔ x + y
+- 전위 연산자와 피연산자 사이에는 빈칸을 두지 않는다. 예) ++x
+- 일반 괄호는 expression 에 붙여 적는다. 예) (x + y)
+
